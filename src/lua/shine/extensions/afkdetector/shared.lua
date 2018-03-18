@@ -20,6 +20,7 @@ local Plugin = {
 function Plugin:SetupDataTable()
 	self:AddDTVar("integer (0 to 1800)", "kick_time", 1800)
 	self:AddDTVar("integer (0 to 1800)", "warn_time", 1800)
+	self:AddDTVar("float",               "spec_mult", 1)
 end
 
 Shine:RegisterExtension("afkdetector", Plugin)

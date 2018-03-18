@@ -20,7 +20,7 @@ function Plugin:Warn()
 end
 
 function Plugin:OnThink()
-	local diff = Shared.GetTime() - last_active_time
+	local diff = (Shared.GetTime() - last_active_time) / self.dt.spec_mult
 	if warn and diff > self.dt.kick_time then
 		self:Kick()
 	elseif diff > self.dt._warn_time then

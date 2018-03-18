@@ -1,0 +1,7 @@
+
+[master]
+name            = "AFK Detector"
+tags            = ["Must be run on server"]
+autodescription = true
+description     = "README.md"
+preview         = "/dev/null"

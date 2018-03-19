@@ -5,3 +5,4 @@ tags            = ["Must be run on server"]
 autodescription = true
 description     = "README.md"
 preview         = "/dev/null"
+website         = "https://github.com/Laaas/ns2-afkdetector"

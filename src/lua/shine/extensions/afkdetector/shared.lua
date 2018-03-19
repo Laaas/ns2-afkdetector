@@ -3,9 +3,10 @@ local Plugin = {
 	HasConfig = true,
 	ConfigName = "AFKDetector.json",
 	DefaultConfig = {
-		KickTime    = 300,
-		WarningTime = 150,
-		SpecMult    = 0,
+		KickTime        = 300,
+		WarningTime     = 150,
+		PlayingKickTime = 200,
+		MaxTeamPlayers  = 42,
 	},
 	CheckConfig            = true,
 	CheckConfigTypes       = true,
@@ -18,9 +19,9 @@ local Plugin = {
 }
 
 function Plugin:SetupDataTable()
-	self:AddDTVar("integer (0 to 1800)", "kick_time", 1800)
-	self:AddDTVar("integer (0 to 1800)", "warn_time", 1800)
-	self:AddDTVar("float",               "spec_mult", 1)
+	self:AddDTVar("integer (0 to 2048)", "kick_time", 2048)
+	self:AddDTVar("integer (0 to 2048)", "warn_time", 2048)
+	self:AddDTVar("integer (0 to 255)",  "max_players", 0)
 end
 
 Shine:RegisterExtension("afkdetector", Plugin)

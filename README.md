@@ -1,3 +1,7 @@
+# Warning
+
+This does not work properly with official spectator slots (if at all).
+
 # About
 
 This mod detects AFK players and kicks them if they are AFK for too long.
@@ -26,7 +30,7 @@ There are three configuration options
 ### KickTime
 After this amount of inactivity, the player will be kicked from the server.
 
-### WarningTime
+### WarnTime
 After this amount of inactivity, the player will be warned about an upcoming kick.
 
 ### PlayingKickTime

@@ -1,0 +1,4 @@
+
+AFKMixin = {
+	type = "NotAFKMixin"
+}
